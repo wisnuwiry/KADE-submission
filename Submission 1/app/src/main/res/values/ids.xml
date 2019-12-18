@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="liga_img" type="id"/>
+    <item name="liga_name" type="id"/>
+    <item name="recyclev" type="id"/>
+    <item name="d_img" type="id" />
+    <item name="d_name" type="id" />
+    <item name="d_desc" type="id" />
+</resources>

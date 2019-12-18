@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Liga anko</string>
+
+    <string-array name="liga_name">
+        <item>Spanish La Liga</item>
+        <item>Scotish Premier League</item>
+        <item>Protugeuese Premiera Liga</item>
+        <item>Italian Serie A</item>
+        <item>German Bundesliga</item>
+        <item>English Premier League</item>
+        <item>English League 1</item>
+        <item>Australian A League</item>
+        <item>American Mayor League</item>
+        <item>French Ligue 1</item>
+    </string-array>
+
+    <array name="liga_image">
+        <item>@drawable/spanish</item>
+        <item>@drawable/scotish</item>
+        <item>@drawable/portugeuese</item>
+        <item>@drawable/italian</item>
+        <item>@drawable/german</item>
+        <item>@drawable/english</item>
+        <item>@drawable/english_1</item>
+        <item>@drawable/australian</item>
+        <item>@drawable/american</item>
+        <item>@drawable/french</item>
+    </array>
+
+    <string-array name="liga_desc">
+        <item>Serie A was the only league to produce three founding members.</item>
+        <item>The Scottish Premiership is the top division of the Scottish Professional Football League</item>
+        <item>The Primeira Liga First League; Portuguese pronunciation: formerly called Primeira Divis</item>
+        <item>Serie A also called Serie A TIM due to sponsorship by Telecom Italia</item>
+        <item>The Fußball-Bundesliga (English: Football Federal League), commonly known as the Bundesliga</item>
+        <item>The Premier League (often referred to as the English Premier League (EPL) outside England)</item>
+        <item>Football League One (often referred to as League One for short or Sky Bet League 1)</item>
+        <item>The A-League is a professional men soccer league, run by Football Federation Australia (FFA)</item>
+        <item>Major League Soccer (MLS) is a professional soccer league representing the sport</item>
+        <item>Ligue 1 (French pronunciation: ​; League 1, formerly known as Division 1)</item>
+    </string-array>
+</resources>
