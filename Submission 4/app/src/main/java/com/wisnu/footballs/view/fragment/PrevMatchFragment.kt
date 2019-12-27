@@ -70,9 +70,11 @@ class PrevMatchFragment : Fragment(), EventView {
         progress.visibility = View.INVISIBLE
     }
 
-    override fun showData(data: List<Event>) {
+    override fun showData(data: List<Event>?) {
         progress.visibility = View.INVISIBLE
-        events.addAll(data)
+        if (data != null) {
+            events.addAll(data)
+        }
         adapter.notifyDataSetChanged()
     }
 }

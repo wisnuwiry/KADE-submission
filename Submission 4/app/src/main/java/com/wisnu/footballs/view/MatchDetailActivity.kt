@@ -2,6 +2,7 @@ package com.wisnu.footballs.view
 
 import android.database.sqlite.SQLiteConstraintException
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -164,11 +165,9 @@ class MatchDetailActivity : AppCompatActivity(), EventDetailView {
 
     private fun setFavorite() {
         if (!isFavorite) {
-            print("isFavorite: $isFavorite")
             menuItem?.getItem(0)?.icon =
                 ContextCompat.getDrawable(this, R.drawable.ic_favorite_border)
         } else {
-            print("isFavorite: $isFavorite")
             menuItem?.getItem(0)?.icon =
                 ContextCompat.getDrawable(this, R.drawable.ic_favorite)
         }
@@ -184,7 +183,6 @@ class MatchDetailActivity : AppCompatActivity(), EventDetailView {
             val favorite = result.parseList(classParser<Favorite>())
             if (favorite.isNotEmpty()) isFavorite = true
             setFavorite()
-            println("isFavorite: $isFavorite Favorite: $favorite")
         }
     }
 }

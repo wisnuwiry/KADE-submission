@@ -4,6 +4,7 @@ import com.google.gson.Gson
 import com.wisnu.footballs.api.ApiRepository
 import com.wisnu.footballs.api.DBApi
 import com.wisnu.footballs.model.EventResponse
+import com.wisnu.footballs.model.SearchResponse
 import com.wisnu.footballs.util.CoroutineContextProvider
 import com.wisnu.footballs.view.base.EventView
 import kotlinx.coroutines.GlobalScope
@@ -36,7 +37,9 @@ class EventPresenter(
                 apiRepository.doRequestAsync(DBApi.getNextEvent(id)).await(),
                 EventResponse::class.java
             )
-            view.showData(data.events)
+            if (data != null) {
+                view.showData(data.events)
+            }
             view.hideLoading()
         }
     }
@@ -46,10 +49,10 @@ class EventPresenter(
 
         GlobalScope.launch(context.main) {
             val data = gson.fromJson(
-                apiRepository.doRequestAsync(DBApi.getSearch(q)).await(),
-                EventResponse::class.java
+                apiRepository.doRequestAsync(DBApi.getSearch(q?.toLowerCase())).await(),
+                SearchResponse::class.java
             )
-            data.events.let {
+            data.event.let { it ->
                 val dataFinal = it.filter { it.strSport == "Soccer" }
                 view.showData(dataFinal)
             }

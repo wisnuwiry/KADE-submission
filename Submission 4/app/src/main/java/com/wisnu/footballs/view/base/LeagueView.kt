@@ -5,5 +5,5 @@ import com.wisnu.footballs.model.League
 interface LeagueView {
     fun showLoading()
     fun hideLoading()
-    fun showData(data: List<League>)
+    fun showData(data: List<League>?)
 }

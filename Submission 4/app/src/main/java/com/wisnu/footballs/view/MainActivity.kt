@@ -1,5 +1,6 @@
 package com.wisnu.footballs.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
@@ -21,6 +22,10 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.favorite -> {
                     loadFavoriteFragment(savedInstanceState)
+                }
+                R.id.search -> {
+                    val intent = Intent(this, SearchActivity::class.java)
+                    startActivity(intent)
                 }
             }
             true

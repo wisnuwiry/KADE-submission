@@ -24,7 +24,9 @@ class EventDetailPresenter(
                 apiRepository.doRequestAsync(DBApi.getTeamDetail(homeTeamId)).await(),
                 TeamResponse::class.java
             )
-            view.dataHome(data.teams[0])
+            if (data.teams.isNotEmpty()){
+                view.dataHome(data.teams[0])
+            }
         }
     }
 
@@ -36,7 +38,10 @@ class EventDetailPresenter(
                 apiRepository.doRequestAsync(DBApi.getTeamDetail(awayTeamId)).await(),
                 TeamResponse::class.java
             )
-            view.dataAway(data.teams[0])
+            if(data.teams.isNotEmpty()){
+                view.dataAway(data.teams[0])
+            }
         }
+        view.hideLoading()
     }
 }

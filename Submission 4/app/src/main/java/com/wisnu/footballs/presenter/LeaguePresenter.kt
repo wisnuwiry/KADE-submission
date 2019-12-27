@@ -23,7 +23,7 @@ class LeaguePresenter(
                 apiRepository.doRequestAsync(DBApi.getLeague()).await(),
                 LeagueResponse::class.java
             )
-            
+
             view.showData(data.league)
             view.hideLoading()
         }

@@ -32,7 +32,6 @@
         android:layout_height="80dp">
 
         <LinearLayout
-            android:id="@+id/linearLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -61,7 +60,6 @@
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/to_detail"
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:src="@drawable/ic_detail"

@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
@@ -63,9 +62,11 @@ class LeagueFragment : Fragment(), LeagueView {
         view?.progress_bar?.visibility = View.INVISIBLE
     }
 
-    override fun showData(data: List<League>) {
+    override fun showData(data: List<League>?) {
         leagues.clear()
-        leagues.addAll(data)
+        if (data != null) {
+            leagues.addAll(data)
+        }
         adapter.notifyDataSetChanged()
     }
 }

@@ -68,13 +68,13 @@ class SearchActivity : AppCompatActivity(), EventView {
         searchView?.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(q: String): Boolean {
                 query = q
-                progress.visibility = View.VISIBLE
                 presenter.search(q)
                 return true
             }
 
             override fun onQueryTextChange(q: String): Boolean {
                 query = q
+                presenter.search(q)
                 return false
             }
         })
@@ -90,8 +90,12 @@ class SearchActivity : AppCompatActivity(), EventView {
         progress.visibility = View.INVISIBLE
     }
 
-    override fun showData(data: List<Event>) {
-        events.addAll(data)
+    override fun showData(data: List<Event>?) {
+        print(data)
+        if (data != null) {
+            events.clear()
+            events.addAll(data)
+        }
         adapter.notifyDataSetChanged()
     }
 }

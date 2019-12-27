@@ -5,5 +5,5 @@ import com.wisnu.footballs.model.Event
 interface EventView {
     fun showLoading()
     fun hideLoading()
-    fun showData(data: List<Event>)
+    fun showData(data: List<Event>?)
 }
