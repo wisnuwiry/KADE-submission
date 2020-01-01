@@ -12,32 +12,32 @@ this is screenshot App on final project(Submission 5):
 
 ### Home
 ---
+![Home Screen](https://github.com/wisnuwiry/KADE-submission/blob/master/ss/home.png?raw=true)
 
 ### League
 Match | Standing | Team
 ---|---|---
-ds |er | dsf
+![](https://github.com/wisnuwiry/KADE-submission/blob/master/ss/league1.png?raw=true) |![](https://github.com/wisnuwiry/KADE-submission/blob/master/ss/league2.png?raw=true) | ![](https://github.com/wisnuwiry/KADE-submission/blob/master/ss/league3.png?raw=true)
 
 ---
 ### Team
 Overview | Player
 ---|---
-asd| df
-
+![](https://github.com/wisnuwiry/KADE-submission/blob/master/ss/team1.png?raw=true)| ![](https://github.com/wisnuwiry/KADE-submission/blob/master/ss/team2.png?raw=true)
 ---
 
 ### PLayer
-
+![](https://github.com/wisnuwiry/KADE-submission/blob/master/ss/player.png?raw=true)
 ---
 
 ### Favorite
 Event/Match | Team
 --- | ---
-df | dfs
+![](https://github.com/wisnuwiry/KADE-submission/blob/master/ss/favorite1.png?raw=true) | ![](https://github.com/wisnuwiry/KADE-submission/blob/master/ss/favorite2.png?raw=true)
 
 ---
 ### Search
 Event/Match | Team
 --- | ---
-df | dfs
+![](https://github.com/wisnuwiry/KADE-submission/blob/master/ss/search1.png?raw=true) | ![](https://github.com/wisnuwiry/KADE-submission/blob/master/ss/search2.png?raw=true)
 
