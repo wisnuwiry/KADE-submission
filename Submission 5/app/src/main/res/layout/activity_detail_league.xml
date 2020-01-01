@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".league.view.DetailLeagueActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <ImageView
+                android:id="@+id/img_detail_league"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                tools:src="@drawable/league_placeholder" />
+
+
+            <TextView
+                android:id="@+id/tv_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Title League Sport" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/soccer" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-25dp"
+                app:cardCornerRadius="25dp"
+                app:cardBackgroundColor="@color/bg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="25dp"
+                    android:paddingTop="25dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tab_league"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tabMode="fixed"
+                        app:tabBackground="@drawable/tab_background"
+                        app:tabSelectedTextColor="@color/indogo"
+                        app:tabPaddingStart="8dp"
+                        app:tabPaddingEnd="8dp"
+                        app:tabPadding="8dp"
+                        app:tabIndicatorHeight="0dp"
+                        app:tabRippleColor="@null" />
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/vp_league"
+                        android:layout_width="match_parent"
+                        android:layout_height="800dp"
+                        android:paddingTop="20dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

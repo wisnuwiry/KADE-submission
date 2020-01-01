@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">FootBalls</string>
+    <string name="soccer">Soccer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="score">Score</string>
+    <string name="id">ID</string>
+    <string name="search">Search</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="league">League</string>
+    <string name="favorite">Favorite</string>
+    <string name="next_match"># Next Match</string>
+    <string name="last_match"># Last Match</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="team">Team</string>
+    <string name="gf_ga">GF-GA</string>
+    <string name="pts">Pts</string>
+    <string name="d">D</string>
+    <string name="w">W</string>
+    <string name="p">P</string>
+    <string name="simple_overview">Simple Overview</string>
+    <string name="player">#     Player</string>
+    <string name="number">Number</string>
+    <string name="name">Name</string>
+    <string name="born">Born</string>
+    <string name="position">Position</string>
+    <string name="height">Height</string>
+</resources>

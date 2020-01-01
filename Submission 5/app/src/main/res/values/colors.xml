@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#58dbe1</color>
+    <color name="colorPrimaryDark">#58dbe1</color>
+    <color name="colorAccent">#2676fb</color>
+    <color name="grey">#f4f6fa</color>
+    <color name="bg">#fafafa</color>
+    <color name="indogo">#422652</color>
+    <color name="ungu_200">#d1d2f6</color>
+</resources>
